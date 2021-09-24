@@ -44,7 +44,7 @@ def generate_id(array):
     random_number = str(random.randint(1, limit))
     while True:
         if random_number in array:
-            if len(array)==(limit):
+            if len(array) == limit:
                 print("\n!!! Kapasite doldu. Kayıt yapılamaz. !!!")
                 welcome_raf()
             else:
