@@ -3,7 +3,6 @@ import random
 
 
 def welcome_raf():
-    get_id()
     while True:
         print("\nRaf'a Hoş Geldiniz.")
         a = input("- Mevcut Ürünleri Görmek İçin 'liste' Yazınız. \n- Yeni Ürün Eklemek İçin 'ekle' Yazınız. \n- "
