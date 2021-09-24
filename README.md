@@ -1,5 +1,5 @@
 # RAF UYGULAMASI
-![alt text](../../Desktop/Ekran Resmi 2021-09-24 13.28.22.png)
+![Image description](../../Desktop/Ekran Resmi 2021-09-24 13.28.22.png)
 
 
 - Bu uygulama Python programlama dili ile yazılmış basit bir raf uygulamasıdır.
