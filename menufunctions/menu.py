@@ -17,3 +17,5 @@ def user_menu():
         elif selection == '5':
             savecsv.user_save_csv()
         break
+
+# user inputtan gelen verileri class ile al

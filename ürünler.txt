@@ -1,4 +1,0 @@
- Product_ID: 3 Product_Name: 1
- Product_ID: 6 Product_Name: efs
- Product_ID: 10 Product_Name: süt
- Product_ID: 8 Product_Name: 2
