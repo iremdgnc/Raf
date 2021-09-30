@@ -20,6 +20,24 @@ class Product:
         self.product_quantity()
 
 
+def user_menu():
+    while True:
+        selection = input("- Ürün Eklemek İçin 1'e Basın. \n- Ürün Silmek İçin 2'ye Basın. "
+                          "\n- Ürün Bilgisi Düzenlemek İçin 3'e Basın. \n- Ürünleri Listelemek İçin 4'e Basın. \n- "
+                          "Dosyayı 'csv' Formatında Kaydetmek İçin 5'e Basın. \n")
+        if selection == '1':
+            user_add_product()
+        elif selection == '2':
+            user_delete_product()
+        elif selection == '3':
+            user_edit_product()
+        elif selection == '4':
+            user_list_product()
+        elif selection == '5':
+            user_save_csv()
+        break
+
+
 def user_add_product():
     # get user inputs
     with open("product.json", "r") as file:
@@ -108,4 +126,5 @@ def user_save_csv():
         writer.writerows(product_list['products'])
 
 
-user_save_csv()
+if __name__ == '__main__':
+    user_menu()
