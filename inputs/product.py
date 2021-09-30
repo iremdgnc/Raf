@@ -1,7 +1,7 @@
-from inputs import common
+from Common import Common
 
 
-class Products(common.Common):
+class Products(Common):
     def __init__(self,product_id,product_name,color,type,quantity):
         super().__init__(product_id,product_name)
         self.color = color
@@ -15,12 +15,21 @@ class Products(common.Common):
             "Quantity": self.quantity
         }
 
-sayac = 0
-user_inputs = list()
-while True:
-    user_input = Products(input("Product_Id: "), input("Product_Name: "), input("Product_Color: "), input("Product_Type: "), input("Product_Quantity: "))
-    user_inputs.append(user_input.information)
-    sayac += 1
-    if sayac == 2:
-        print(user_inputs)
-        break
+
+def my_function():
+
+    counter = 0
+    user_inputs = list()
+    while True:
+        user_input = Products(input("Product_Id"), input("Product_Name"), input("Product_Color"), input("Product_Quantity"))
+        user_inputs.append(user_input.information)
+        counter += 1
+        if counter == 2:
+            print(user_inputs)
+            print()
+            break
+
+
+if __name__ == "__main__":
+    my_function()
+
